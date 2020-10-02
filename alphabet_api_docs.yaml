@@ -1,0 +1,29 @@
+openapi: 3.0.1
+info:
+  title: AlphabetAPI
+  description: API to validate string for all alphabets
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /alphabet/validate:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: inputstring
+          in: query
+          schema:
+            type: string
+          example: a17347qwertyuiopasdfghjklzxcvbnm54678
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:8080'
+    servers:
+      - url: 'http://localhost:8080'
